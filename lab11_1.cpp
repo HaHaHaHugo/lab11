@@ -1,2 +1,35 @@
-// cout << "Press Enter 3 times to reveal your future.";
-// cout << "You will get A in this 261102.";
+#include<iostream>
+#include<ctime>
+#include<cstdlib>
+using namespace std;
+int main(){
+    string e;
+    double r;
+    srand(time(0));
+    r = rand()%8;
+    if(r==0){
+        e="A";
+    }else if(r==1){
+        e="A+";
+    }else if(r==2){
+        e="B";
+    }else if(r==3){
+        e="B+";
+    }else if(r==4){
+        e="C";
+    }else if(r==5){
+        e="C+";
+    }else if(r==6){
+        e="D";
+    }else if(r==7){
+        e="D+";
+    }else{
+        e="W";
+    }
+    cout << "Press Enter 3 times to reveal your future.\n";
+        cin.get();
+        cin.get();
+        cin.get();
+        cout << "You will get " << e << " in this 261102.\n";
+    return 0;
+}
