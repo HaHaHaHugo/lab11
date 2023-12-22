@@ -4,25 +4,25 @@
 using namespace std;
 int main(){
     string e;
-    double r;
+    int r;
     srand(time(0));
-    r = rand()%8;
+    r = rand()%9;
     if(r==0){
         e="A";
     }else if(r==1){
-        e="A+";
+        e="B+";
     }else if(r==2){
         e="B";
     }else if(r==3){
-        e="B+";
+        e="C+";
     }else if(r==4){
         e="C";
     }else if(r==5){
-        e="C+";
+        e="D+";
     }else if(r==6){
         e="D";
     }else if(r==7){
-        e="D+";
+        e="F";
     }else{
         e="W";
     }
